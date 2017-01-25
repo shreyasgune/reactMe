@@ -60,7 +60,60 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      'Hello World!'
+	      'Hello World!',
+	      React.createElement(Friends, null)
+	    );
+	  }
+	});
+
+	var Friends = React.createClass({
+	  displayName: 'Friends',
+
+	  render: function () {
+	    var name = 'shreyas';
+	    var friends = ['Ameya', 'Pradeep', 'Puuzy'];
+
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h3',
+	        null,
+	        ' Name : ',
+	        name,
+	        ' '
+	      ),
+	      React.createElement(ShowList, { names: friends })
+	    );
+	  }
+	});
+
+	var ShowList = React.createClass({
+	  displayName: 'ShowList',
+
+	  render: function () {
+	    var listItems = this.props.names.map(function (friend) {
+	      return React.createElement(
+	        'li',
+	        null,
+	        ' ',
+	        friend,
+	        ' '
+	      );
+	    });
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h3',
+	        null,
+	        ' Friends '
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        listItems
+	      )
 	    );
 	  }
 	});
