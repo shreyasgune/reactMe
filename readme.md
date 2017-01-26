@@ -29,6 +29,19 @@ OR if you have your own package.json, just include this ::
 </br>
 Dont forget to change the author details in the `package.json`
 
+##Run it NOW!
+To run it , go to `package.json` and define stuff in the `scripts` section.
+```
+"scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  }
+```
+</br>
+To start a server : `npm run start`</br>
+To bundle everything and minify it for production : `npm production`</br>
+</br>
+
 ## Webpacked
 So, this webpack thing, it takes all your different files and included JS code and bundles it all together into one single file.
 Check out `webpack.config.js`
