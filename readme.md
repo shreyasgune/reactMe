@@ -42,6 +42,9 @@ To start a server : `npm run start`</br>
 To bundle everything and minify it for production : `npm production`</br>
 </br>
 
+If you want to close a running server and start it agian but have ERR due to the port, do : `fuser -k 8080/tcp` in your bash.
+</br>
+
 ## Webpacked
 So, this webpack thing, it takes all your different files and included JS code and bundles it all together into one single file.
 Check out `webpack.config.js`
