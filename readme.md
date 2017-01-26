@@ -111,7 +111,7 @@ React has an amazing [documentation page](https://facebook.github.io/react/docs/
 Right now I've just tried to make things work, debugging through the console. I'll learn [Mocha](https://mochajs.org/) and then right unit tests for it later.
 
 ## Contributors
-If you want to contribute or add to it or make it better, more readable, go for it. Email me issues if you can  : [@shreyas](shreyas.enug@gmail.com) 
+If you want to contribute or add to it or make it better, more readable, go for it. Email me issues if you can  : [shreyas](mailto:shreyas.enug@gmail.com) 
 
 ## License
 
