@@ -91,12 +91,50 @@ render: function() {   //render is what you're going to push out.
     <div> Looks like HTML, but is actually JSX 
     //To have stuff printed out to the page, just put it inside the curly braces.
     <p> some text cometh this way {this.someVariableValue} </p>
+    //To include child components and pass in some parameters. 
+    <ChildComponentName param={this.props.param}/>
     </div>
     )
 }
 ```
 </br>
 and to export this stuff, just do : `export default someClassName` OR `module.exports = someClassName;` </br>
+to import a component (which becomes a child component) write either of the following :
+`import <classname> from '(path)/filename; //incase you use ES6` OR `var className = require('(path)filename');`</br>
+
+## How Routes work
+Create a JS file called `routes.js`. Include stuff that I've written below:
+```
+var ReactRouter = require('react-router');
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var IndexRoute = ReactRouter.IndexRoute;
+
+var ComponentName = require('(path)/filename');
+```
+</br>
+Then, to create routes, just do the following
+```
+var routes=(
+	<Router>
+	<Route path='/' component = {MainComponent}>
+		<Route path='/CC1' component={childComponent1}/>
+		<Route path='/CC2' component={childComponent2}/>
+	</Route>
+	</Router>
+);
+```
+</br>
+and finally, export it.
+</br>
+`module.exports = routes;`
+</br>
+back in the `index.js`, render this file instead of all other files.
+```
+var routes = require('(path)routes');
+ReactDOM.render(routes, document.getElementById('app'));
+```
+and that's how easy it is to route stuff.
 
 </br>
 That's pretty much the basics of it all.
