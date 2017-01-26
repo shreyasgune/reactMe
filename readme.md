@@ -103,6 +103,19 @@ That's pretty much the basics of it all.
 
 More info to come soon.
 
+## API Reference
+React has an amazing [documentation page](https://facebook.github.io/react/docs/hello-world.html). 
+
+
+## Tests
+Right now I've just tried to make things work, debugging through the console. I'll learn [Mocha](https://mochajs.org/) and then right unit tests for it later.
+
+## Contributors
+If you want to contribute or add to it or make it better, more readable, go for it. Email me issues if you can  : [@shreyas](shreyas.enug@gmail.com) 
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">ReactJS Quickstart</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Shreyas Gune</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
   
  
