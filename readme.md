@@ -134,6 +134,8 @@ Then, to create routes, just do the following
 var routes=(
 	<Router>
 	<Route path='/' component = {MainComponent}>
+		//if you want to keep a default route to a particular component and not have to put in the /name , use IndexRoute
+		<IndexRoute component={MainHome}/> //MainHome is always loaded.
 		<Route path='/CC1' component={childComponent1}/>
 		<Route path='/CC2' component={childComponent2}/>
 	</Route>
